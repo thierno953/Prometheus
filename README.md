@@ -397,3 +397,6 @@ receivers:
     auth_identitfy: "test@gmail.com"
     auth_password: "mypassword"
 ```
+
+## Other resources
+[More prometheus](https://prometheus.io/download/#alertmanager)

@@ -33,6 +33,6 @@
 - Sufficient storage on your system and good internet connectivity.
 - Ports Required **9090** (Prometheus), **3000** (Grafana), **9100** (Node Exporter).
 
-## Other resources
+**Other resources**
 
 [More prometheus](https://prometheus.io/download/#alertmanager)

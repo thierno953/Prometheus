@@ -30,7 +30,7 @@ sudo useradd -rs /bin/false node_exporter
 
 **Create a Custom Node Exporter Service**
 
-- **Step 4 :** Create a node_exporter service file in the /etc/systemd/system directory.
+**Step 4 :** Create a node_exporter service file in the /etc/systemd/system directory.
 
 ```bash
 sudo nano /etc/systemd/system/node_exporter.service

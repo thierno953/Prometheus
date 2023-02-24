@@ -25,6 +25,7 @@ PromQLuses for data types
 
 ```shell
 process_cpu_seconds_total
+
 process_cpu_seconds_total{job="Node Exporter"}
 ```
 
@@ -95,6 +96,7 @@ Comparison operators is a mathematical symbols which is used for comparison.
 
 ```shell
 prometheus_http_requests_total > 12
+
 node_cpu_seconds_total == 2.19
 ```
 
@@ -130,8 +132,11 @@ Aggregation Operators calculate mathematical values over a time range.
 
 ```shell
 sum(prometheus_http_requests_total) by (code)
+
 topk(3, sum(prometheus_http_requests_total) by (code))
+
 max(node_cpu_seconds_total)
+
 ```
 
 # Functions Changes - deriv(), predict_linear

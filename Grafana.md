@@ -44,7 +44,7 @@ sudo systemctl enable grafana
 
 - To access Grafana Dashboard open favorite browser, type server IP or Name followed by grafana default port **3000**
 
-Here you can see login page of Grafana now you will have to login with below Grafana default **UserName** and **Password**
+  Here you can see login page of Grafana now you will have to login with below Grafana default **UserName** and **Password**
 
 ```bash
 Username - admin
@@ -56,7 +56,7 @@ password - admin
 
 - Once you logged into Grafana Now first Navigate to Settings **Icon ->> Configuration ->> data sources**.
 
-Now lets click on **Add Data sources** and select **Prometheus**
+  Now lets click on **Add Data sources** and select **Prometheus**
 
 - Creating Grafana Dashboard to monitor Linux server, come to Grafana Home page and we can see a **+**icon. Click on that and select **import**
 - Now provide the Grafana.com Dashboard ID which is **14513** and click on Load.

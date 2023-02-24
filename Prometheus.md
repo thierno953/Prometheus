@@ -96,7 +96,9 @@ sudo systemctl daemon-reload
 
 ```bash
 sudo systemctl start prometheus
+
 sudo systemctl enable prometheus
+
 sudo systemctl status prometheus
 ```
 

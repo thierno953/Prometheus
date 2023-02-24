@@ -10,7 +10,7 @@ groups:
       expr: avg without(cpu)(rate(node_cpu_seconds_total{mode="idle"}[5m]))
 ```
 
-- **Checking rules**
+**Checking rules**
 
 ```shell
 ./promtool check rules rules/myrules.yml

@@ -1,6 +1,6 @@
 # Rules in Prometheus
 
-**Recording rules**
+## Recording rules
 
 ```bash
 groups:
@@ -18,7 +18,7 @@ groups:
 ./promtool check rules rules/myrules.yml
 ```
 
-**Alerting rules**
+## Alerting rules
 
 ```bash
 groups:

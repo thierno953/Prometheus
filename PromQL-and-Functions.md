@@ -72,12 +72,12 @@ There are three types of Binary Operators
 
 Arithmetic operators are the symbols that represent arithmetic math operations.
 
-- - (addition)
-- - (subtraction)
-- - (multiplication)
-- / (division)
-- % (modulo)
-- ^ (power/exponentiation)
+- (+) (addition)
+- (-) (subtraction)
+- (\*) (multiplication)
+- (/) (division)
+- (%) (modulo)
+- (^) (power/exponentiation)
 
 ```shell
 prometheus_http_requests_total*2
@@ -87,12 +87,12 @@ prometheus_http_requests_total*2
 
 Comparison operators is a mathematical symbols which is used for comparison.
 
-- == (equal)
-- != (not-equal)
-- > (greater-than)
-- < (less-than)
-- > = (greater-or-equal)
-- <= (less-or-equal)
+- (==) (equal)
+- (!=) (not-equal)
+- (>)(greater-than)
+- (<)(less-than)
+- (>=) (greater-or-equal)
+- (<=) (less-or-equal)
 
 ```shell
 prometheus_http_requests_total > 12
@@ -104,9 +104,9 @@ node_cpu_seconds_total == 2.19
 
 The logicial operators are used to combine simple relational expression into more complex expression.
 
-- and (intersection)
-- or (union)
-- unless(complement)
+- (and) (intersection)
+- (or) (union)
+- (unless) (complement)
 
 ```shell
 vector 1 and vector 2, vector 1 or vector 2, vector 1 unless vector 2
@@ -118,17 +118,17 @@ prometheus_http_requests_total or node_cpu_seconds_total
 
 Aggregation Operators calculate mathematical values over a time range.
 
-- sum (calculate sum over dimensions)
-- min (select minimum over dimensions)
-- max (select maximum over dimensions)
-- avg (calculate the average over dimensions)
-- group (all values in the resulting vector are 1)
-- stddev (calculate population standard deviation over dimensions)
-- stdvar (calculate population standard variance over dimensions)
-- count (count number of elements in the vector)
-- count_values(count number of elements with the same value)
-- bottomk (smallest k elements by sample value)
-- topk (largest k elements by sample value)
+- (sum) (calculate sum over dimensions)
+- (min) (select minimum over dimensions)
+- (max) (select maximum over dimensions)
+- (avg) (calculate the average over dimensions)
+- (group) (all values in the resulting vector are 1)
+- (stddev) (calculate population standard deviation over dimensions)
+- (stdvar) (calculate population standard variance over dimensions)
+- (count) (count number of elements in the vector)
+- (count_values) (count number of elements with the same value)
+- (bottomk) (smallest k elements by sample value)
+- (topk) (largest k elements by sample value)
 
 ```shell
 sum(prometheus_http_requests_total) by (code)
@@ -148,6 +148,3 @@ deriv(process_resident_memory_bytes{job="prometheus"}[1h])
 
 predict_linear(node_memory_MemFree_bytes{job="Node_Exporter"}[1h],2*60*60)/1024/1024
 ```
-
-
-
